@@ -4,9 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe of Strawberry Pie</title>
+    <style>
+        body {
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center;
+        }
+
+        ol {
+            list-style-type: none;
+            counter-reset: elementcounter;
+        }
+
+        ol > li:before {
+            content: "Step " counter(elementcounter) ". ";
+            counter-increment: elementcounter;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
     <h1>Strawberry Pie</h1>
     <img src = '../images/strawberry-pie.jpg' alt = 'Photo of Strawberry Pie' style="width:600px;height:600px;">
+
+    <h3>Description</h3>
+    <p style = "text-align: center;">
+        This strawberry pie is my favorite pie, and it's very easy to make. <Br>
+        I got the recipe many years ago in North Jersey from the Sussex County Strawberry Farm.
+    </p>
+
+    <hr>
+    <h3>Ingredients</h3>
+    <ul>
+        <li>1 quart fresh strawberries, hulled</li>
+        <li>1 (9 inch) pie crust, baked</li>
+        <li>1 cup white sugar</li>
+        <li>3 tablespoons cornstarch</li>
+        <li>¾ cup water</li>
+        <li>½ cup heavy whipping cream</li>
+    </ul>
+
+    <hr>
+    <h3>Steps</h3> 
+    <ol>
+        <li><br>Gather all ingredients.</li><br>
+        <li><br>Arrange 1/2 of strawberries in baked pastry shell. Place remaining strawberries in a medium saucepan.</li><br>
+        <li><br>Add sugar to the strawberries in the saucepan; place over medium heat and bring to a boil, stirring frequently.</li><br>
+        <li><br>Whisk cornstarch and water together in a small bowl. Gradually stir cornstarch mixture into boiling strawberry mixture. Reduce heat and simmer mixture until thickened, about 10 minutes, stirring constantly. </li><br>
+        <li><br>Pour cooked strawberry mixture over berries in pastry shell. Refrigerate until chilled and set, at least 3 hours.</li><br>
+        <li><br>Before serving, whip cream in a medium bowl until soft peaks form.</li><br>
+        <li><br>Serve each slice of pie with a dollop of whipped cream. Enjoy!</li><br>
+    </ol>
 </body>
 </html>
