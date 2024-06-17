@@ -4,9 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe of Gingerbread Cookies</title>
+    <style>
+        body {
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center;
+        }
+
+        ol {
+            list-style-type: none;
+            counter-reset: elementcounter;
+        }
+
+        ol > li:before {
+            content: "Step " counter(elementcounter) ". ";
+            counter-increment: elementcounter;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
     <h1>Gingerbread Cookies</h1>
     <img src = '../images/gingerbread-cookies.jpg' alt = 'Photo of Gingerbread Cookies' style="width:600px;height:600px;">
+
+    <h3>Description</h3>
+    <p style = "text-align: center;">
+        Gingerbread cookies are a must for the holidays, and these spiced gingerbread men have a festive taste that doesn't disappoint!<br> 
+        Originally titled "Eileen's Spicy Gingerbread Men," this gingerbread cookie recipe is easy to make and fun to decorate with kids.<br>
+        Adjust the spices to your liking, and use any shape cookie cutter for a nice variety of holiday cookies.
+    </p>
+
+    <hr>
+    <h3>Ingredients</h3>
+    <ul>
+        <li>Margarine</li>
+        <li>White sugar (½ cup, to be exact)</li>
+        <li>Egg yolk</li>
+        <li>Molasses</li>
+        <li>Flour</li>
+        <li>Salt</li>
+        <li>Leaveners</li>
+        <li>Spices</li>
+    </ul>
+
+    <hr>
+    <h3>Steps</h3> 
+    <ol>
+        <li><br><b>Make the dough:</b>Beat the wet ingredients together. In a separate bowl, whisk together the dry ingredients. Gradually stir the dry mixture into the wet mixture.</li><br>
+        <li><br><b>Chill the dough:</b>Divide the dough into two discs, cover in storage wrap, and refrigerate for a few hours or up to overnight.</li><br>
+        <li><br><b>Roll the dough:</b>Roll the discs out one at a time. Cut into desired shapes.</li><br>
+        <li><br><b>Bake the cookies:</b>Bake the cookies in a preheated oven until they're firm. </li><br>
+    </ol>
 </body>
 </html>
